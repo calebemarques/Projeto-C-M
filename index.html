@@ -1,86 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>parallax</title>
-	<meta charset="utf-8">
-	<header><!-- inicio Cabecalho -->
-	
-	<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
-	  <div class="container">
-		
-		<a href="#" class="navbar-brand">
-		 
-		</a>
-
-		<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="nav-principal">
-		  <ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-			  <a href="" class="nav-link">Home</a>
-			</li>
-			<li class="nav-item">
-			  <a href="" class="nav-link">Portfólio</a>
-			</li>
-			<li class="nav-item">
-			  <a href="" class="nav-link">contato</a>
-			</li>
-		  
-		  </ul>
-		</div>
-
-	  </div>
-	</nav>
-  </header><!--/fim Cabecalho -->
-	
- <link rel="stylesheet" type="text/css" href="css/estilo.css">
- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-</head>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Sidebar Menu  | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
+  <div class="sidebar">
+    <div class="logo-details">
+     
+        <div class="logo_name">Calebe Developer</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+     
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+         <span class="links_name">  Home </span>
+        </a>
+         <span class="tooltip" >Home</span>
+      </li>
+      <li>
+       <a href="index - cópia.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Portfólio</span>
+       </a>
+       <span class="tooltip">Portfólio</span>
+     </li>
+     <li>
+       <a href="index - cópia 2.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Contato</span>
+       </a>
+       <span class="tooltip">Contato</span>
+     </li>
+    
+   
+     
+     <li class="profile">
+         <div class="profile-details">
+           <img src="img/profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Calebe </div>
+             <div class="job">Desenvolvedor web junior</div>
+           </div>
+         </div>
+        <a href="index.html"><i class='bx bx-log-out' id="log_out" ></i></a>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Dashboard</div>
+  </section>
 
-	<div class="caixa1">
-		<div   class="conteudo-titulo">
-              <span>PASSEIO DE BALÕES</span>
-		</div>
-	</div>
-	<div class="conteudo">
-       <h3>Parallax</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-	 Quos dolorum sed ducimus nostrum error itaque vero delectus,
-	 sint repellat, incidunt cum quasi culpa odit modi illum ut!
-	 Tenetur, eum dolorem.</p>
-	 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
- 	Quos dolorum sed ducimus nostrum error itaque vero delectus,			sint repellat, incidunt cum quasi culpa odit modi illum ut!
-	Tenetur, eum dolorem.</p>
-	</div>
-	<div class="caixa2">
-    	<div   class="conteudo-titulo">
-					<span>PEGANDO A ESTRADA</span>  
-	    </div>
-	</div>
-	<div class="conteudo">
-			<h3>Parallax</h3>
-		 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-		  Quos dolorum sed ducimus nostrum error itaque vero delectus,
-		  sint repellat, incidunt cum quasi culpa odit modi illum ut!
-		  Tenetur, eum dolorem.</p>
-		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-		  Quos dolorum sed ducimus nostrum error itaque vero delectus,			sint repellat, incidunt cum quasi culpa odit modi illum ut!
-		 Tenetur, eum dolorem.</p>
-		 </div>
+  <script src="script 2.js"></script>
 
-    <div class="caixa3">
-		<div   class="conteudo-titulo">
-					<span>POR DO SOL</span>  
-	    </div>
-   </div>
-
-   <div class="caixa4">
-	 <div   class="conteudo-titulo">
-				<span>MONTANHAS</span>  
-	</div>
-   </div>
 </body>
 </html>
