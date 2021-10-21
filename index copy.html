@@ -1,192 +1,121 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>parallax</title>
-	<meta charset="utf-8">
-	
-	<style type="text/css">
-	
-		/* Configuração padrão da página
-		-------------------------------*/
-		body, html {
-			margin: 0;
-			font: 16px "Lato", sans-serif;
-			color: #777;
-			height: 100%;
-			border: 1px solid red;
-		}
-
-		.conteudo {
-			color: #777;
-			background-color: white;
-			text-align: justify;
-			padding: 50px 80px;
-		}
-
-		h3 {
-			text-transform: uppercase;
-			color: #111;
-			text-align: center;
-		}
-
-	     p {
-			 margin-bottom: 20px;
-		 }
- 
-footer {
-	background: #000;
-	padding: 50px 0px 20px 0px;
-	position: relative;
-}
-
-footer h4 {
-	color: #919496;
-	font-size: 0.8em;
-	text-transform: uppercase;
-}
-
-footer .navbar-nav a {
-	color: white;
-	font-size: 0.8em;
-}
-
-footer .navbar-nav a:hover {
-	color: #9bf0e1;
-	text-decoration: none;
-}
-
-footer ul {
-	list-style: none;
-}
-
-footer ul li  {
-	float: right;
-	margin: 0 5px;
-
-}
-
-		/* Efeito parallax 
-		---------------------------*/
-       .caixa1, .caixa2 ,.caixa3 ,.caixa4 {
-		    position: relative;
-			height: 100%;
-			opacity: 0.7;
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position:  center;
-			background-attachment: fixed;
-	   }
-
-	   .caixa1 {
-          background-image: url(img/imagem1.jpg); 
-	   }
-
-	   .caixa2 {
-		  background-image: url(img/imagem2.jpg);
-	   }
-
-	   .caixa3 {
-		  background-image: url(img/imagem3.jpg);
-	   }
-
-	   .caixa4 {
-		  background-image: url(img/imagem4.jpg);
-	   }
-
-	   .conteudo-titulo {
-         position: absolute;
-		 left: 0;
-		 top: 45%;
-		 width: 100%;
-		 text-align: center;
-		 
-	   } 
-
-	   .conteudo-titulo span,.titulo {
-		 color: #fff;
-         background-color: #111;
-		 padding: 27px;
-     height: 80px;
-		 font-size: 25px;
-		 letter-spacing: 5px;
-	   }
-  </style>
-
-</head>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-
-	<div class="caixa1">
-		<div   class="conteudo-titulo">
-              <span class="" ><img src="img/img.png" style="width: 127px;"></span>
-              <br>
-              <span style="width: 127px;">Developer  fullstack</span>
-		</div>
-	</div>
-  
-
-	<div class="caixa2">
-    	<div   class="conteudo-titulo">
-					<span>PEGANDO A ESTRADA</span>  
-	    </div>
-	</div>
-	<footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <img src="" width="142">
-        </div>
-        <div class="col-md-2">
-          <h4>company</h4>
-          <ul class="navbar-nav">
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Empregos</a></li>
-            <li><a href="">Imprensa</a></li>
-            <li><a href="">Novidades</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h4>comunidades</h4>
-          <ul class="navbar-nav">
-            <li><a href="">Artistas</a></li>
-            <li><a href="">Desenvolvedores</a></li>
-            <li><a href="">Marcas</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h4>links uteis</h4>
-          <ul class="navbar-nav">
-            <li><a href="">Ajuda</a></li>
-            <li><a href="">Presentes</a></li>
-            <li><a href="">Player da web</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>
-              <a href=""><img src=""></a>
-            </li>
-            <li>
-              <a href=""><img src=""></a>
-            </li>
-            <li>
-              <a href=""><img src=""></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">CodingLab</div>
+        <i class='bx bx-menu' id="btn" ></i>
     </div>
-  </footer>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">File Manager</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Prem Shahi</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Dashboard</div>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
 
-    <div class="caixa3">
-		<div   class="conteudo-titulo">
-					<span>POR DO SOL</span>  
-	    </div>
-   </div>
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
 
-   <div class="caixa4">
-	 <div   class="conteudo-titulo">
-				<span>MONTANHAS</span>  
-	</div>
-   </div>
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
 </body>
 </html>
