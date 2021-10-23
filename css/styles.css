@@ -7,6 +7,16 @@
   color: #323232;
   border: none;
 }
+.caixa {
+  padding-top:20px ;
+  padding-bottom: 20px;
+}
+ 
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #9bf0e1;
+}
+
 
 input, label {
   display: block;
