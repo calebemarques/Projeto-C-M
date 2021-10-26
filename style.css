@@ -164,6 +164,16 @@
   transition: all 0.5s ease;
   color: #11101D;
 }
+.brdrr {
+  border-radius: 5px;
+}
+
+.cor {
+  background: black;
+  color: white;
+  padding:5px;
+  border-radius: 20px;
+}
 .sidebar li i{
   height: 50px;
   line-height: 50px;
