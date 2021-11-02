@@ -1,3 +1,56 @@
+
+		
+//const obj = jQuery()
+//const obj = $('h1')
+//console.log(obj)
+$('[acao-clique]').click(function(){
+
+  //$('#conteudo').addClass('destaque')
+  //$('#conteudo').removeClass('destaque')
+  //$('ul li').addClass('destaque')
+  //$('ul#lista li').addClass('destaque')
+  //$('h1').addClass('destaque')
+  //$('[acao-clique]').addClass('destaque')
+  //$('[ativo="sim"]').addClass('destaque')
+  //$('*').addClass('destaque')
+
+  /*encadeamento*/
+  //$('h1')
+    //.css('color','white')
+    //.addClass('destaque')
+
+  /* Seletores exclusivos jQuery (filtros) */
+  //$('ul li:first').addClass('destaque')
+  //$('ul li:last').addClass('destaque')
+  //$('ul li:eq(2)').addClass('destaque')
+  //$('ul li:gt(1)').addClass('destaque')
+  //$('ul li:lt(2)').addClass('destaque')
+  //$('ul li:odd').addClass('destaque')
+  //$('#area :header').addClass('destaque')
+  //$('ul li:hidden').show()
+  //$('ul li:contains("ana")').addClass('destaque')
+
+  /*Filtros de formulário*/
+  //$('form :input').hide()
+  //$('form :text').toggle()
+  //$('form :password').toggle()
+  //$('form :radio').toggle()
+  //$('form :checkbox').toggle()
+  $('form :submit').toggle()
+
+})            
+
+
+
+
+
+
+
+
+
+
+
+
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
 let searchBtn = document.querySelector(".bx-search");
