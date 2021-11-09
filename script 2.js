@@ -3,7 +3,7 @@
 //const obj = jQuery()
 //const obj = $('h1')
 //console.log(obj)
-$('[acao-clique]').click(function(){
+
 
   //$('#conteudo').addClass('destaque')
   //$('#conteudo').removeClass('destaque')
