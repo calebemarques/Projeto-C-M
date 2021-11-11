@@ -36,9 +36,9 @@
   //$('form :password').toggle()
   //$('form :radio').toggle()
   //$('form :checkbox').toggle()
-  $('form :submit').toggle()
+  ('form :submit').toggle()
 
-})            
+           
 
 
 
